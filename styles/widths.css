@@ -1,0 +1,68 @@
+.header .icon {
+    display: none;
+  }
+@media screen and (max-width: 960px) {
+    .header a:not(:first-child) {display: none;}
+    .header a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .header.responsive {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .header.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .header.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width:700px){
+    .skills{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .introd{
+        width:70%;
+        margin:20px;
+    }
+    .img1{
+        width:70%;
+        margin:10px;
+    }
+    .myedu{
+        width:90%;
+    }
+    .coding{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width:600px){
+    .mywork{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width:60%;
+    }
+  }

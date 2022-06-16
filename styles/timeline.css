@@ -1,0 +1,227 @@
+.exp{
+  margin:25px;
+}
+.hexa {
+    border: 0px;
+    float: left;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+    font-size: 22px;
+    background: #f0f0f0;
+    color: #3c3c3c;
+    position: relative;
+    margin-top: 15px;
+  }
+  
+  .hexa:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #f0f0f0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -15px;
+  }
+  
+  .hexa:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 15px solid #f0f0f0;
+    bottom: -15px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: " ";
+    display: block;
+    width: 2.5px;
+    height: 100%;
+    margin-left: -1px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+     background: -webkit-linear-gradient(
+      top,
+      rgb(255, 170, 170) 0%,orange 12.5%,yellow 25%,green 37.5%,blue 50%,indigo 62.5%,violet 75%,red 87.5%,pink 100%
+    );
+    z-index: 5;
+  }
+  .timeline li {
+    padding: 2em 0;
+  }
+  .timeline .hexa {
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    background: #6C63FF;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -30px;
+    margin-top: 0;
+  }
+  .timeline .hexa:before {
+    border-bottom: 4px solid #6C63FF;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    top: -4px;
+  }
+  .timeline .hexa:after {
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-top: 4px solid #6C63FF;
+    bottom: -4px;
+  }
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .flag-wrapper {
+    text-align: center;
+    position: relative;
+  }
+  .flag {
+    position: relative;
+    display: inline;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+    font-weight: 600;
+    z-index: 15;
+    padding: 6px 10px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: rgb(70, 190, 254);
+  }
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+    line-height: 1em;
+    color: #fff;
+  }
+  .direction-l .time-wrapper {
+    float: none;
+  }
+  .direction-r .time-wrapper {
+    float: none;
+  }
+  .time {
+    background:whitesmoke;
+    color: black;
+    display: inline-block;
+    padding: 8px;
+  }
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    box-shadow: 0px 6px 20px rgba(69, 65, 190, 0.7);
+    border-radius: 15px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .direction-l .desc,
+  .direction-r .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+    z-index: 15;
+  }
+  @media (min-width: 768px) {
+    .timeline {
+      width: 660px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .timeline li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+    .timeline .hexa {
+      left: -28px;
+      right: auto;
+      top: 8px;
+    }
+    .timeline .direction-l .hexa {
+      left: auto;
+      right: -28px;
+    }
+    .direction-l {
+      position: relative;
+      width: 310px;
+      float: left;
+      text-align: right;
+    }
+    .direction-r {
+      position: relative;
+      width: 310px;
+      float: right;
+      text-align: left;
+    }
+    .flag-wrapper {
+      display: inline-block;
+    }
+    .flag {
+      font-size: 18px;
+    }
+    .time-wrapper {
+      display: inline;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .direction-l .time-wrapper {
+      float: left;
+    }
+    .direction-r .time-wrapper {
+      float: right;
+    }
+    .time {
+      padding: 5px 10px;
+    }
+    .direction-r .desc {
+      margin: 1em 0 0 0.75em;
+    }
+  }
+  @media (min-width: 992px) {
+    .timeline {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .direction-l {
+      position: relative;
+      width: 380px;
+      float: left;
+      text-align: right;
+    }
+    .direction-r {
+      position: relative;
+      width: 380px;
+      float: right;
+      text-align: left;
+    }
+  }
