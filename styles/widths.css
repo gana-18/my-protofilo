@@ -131,3 +131,15 @@
       min-height: 13vh;
     }
   }
+
+  @media screen and (max-width:550px){
+    .star1{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .connect1, .connect2{
+      display: flex;
+      flex-direction: column;
+    }
+  }
