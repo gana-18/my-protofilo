@@ -1,7 +1,13 @@
 .header .icon {
     display: none;
   }
-@media screen and (max-width: 960px) {
+
+
+
+
+
+
+@media screen and (max-width: 970px) {
     .header a:not(:first-child) {display: none;}
     .header a.icon {
       float: right;
@@ -9,7 +15,11 @@
     }
   }
   
-  @media screen and (max-width: 960px) {
+
+
+
+
+  @media screen and (max-width: 970px) {
     .header.responsive {
         position: relative;
         flex-direction: column;
@@ -28,12 +38,12 @@
       text-align: left;
     }
   }
+
+
+
+
+
   @media screen and (max-width:700px){
-    .skills{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .about{
         flex-direction: column;
         align-items: center;
@@ -55,8 +65,18 @@
       justify-content: center;
       align-items: center;
     }
+    .code{
+      margin-top:25px;
+    }
   }
-  @media screen and (max-width:600px){
+
+
+
+
+
+
+
+  @media screen and (max-width:650px){
     .mywork{
         flex-direction: column;
         justify-content: center;
@@ -64,5 +84,39 @@
     }
     .card{
         width:60%;
+        margin-top:25px;
     }
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width:1024px){
+    .skills{
+      flex-direction: column;
+    }
+    .skills1,.skills2{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  }
+
+
+
+  @media screen and (max-width:700px){
+    .skills{
+      flex-direction: column;
+    }
+    .skills1,.skills2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
   }
