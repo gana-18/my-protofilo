@@ -95,7 +95,7 @@
 
 
 
-  @media screen and (max-width:1024px){
+  @media screen and (max-width:1030px){
     .skills{
       flex-direction: column;
     }
@@ -119,4 +119,15 @@
       align-items: center;
       justify-content: space-between;
   }
+  }
+
+
+
+  @media screen and (max-width:430px){
+    .fixed-text{
+      font-size:20px;
+    }
+    .type{
+      min-height: 13vh;
+    }
   }

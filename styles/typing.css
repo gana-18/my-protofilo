@@ -11,7 +11,7 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;
-	min-height: 20vh;
+	min-height: 16vh;
 }
 .text-box{
 	font-size: 80px;
