@@ -24,15 +24,18 @@
     display: flex;
     flex-direction:row;
     background-color: #6C63FF;
-    padding:20px;
+    padding:10px;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
-    overflow: hidden
+    position:fixed;
+    z-index:1000;
+    overflow: hidden;
+    width:100%;
 }
 .header>a{
     display: block;
     color:white;
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     background-color:#6C63FF;
 }
@@ -44,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:20px;
+    margin-top:135px;
 }
 .about{
     display: flex;
@@ -61,16 +64,21 @@
     background-image: linear-gradient(45deg, #4568dc, #b06ab3);
     box-shadow: 0px 6px 20px rgba(69, 65, 190, 0.7);
     border-radius: 15px;
-    padding:20px;
-    line-height: 40px;
-    font-size: 20px;
+    padding:25px;
+    line-height: 45px;
+    font-size: 23px;
     font-weight: 600;
 }
 .img1{
     display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     width:50%;
+}
+.img11{
+    height:500px;
+    width:340px;
+    border-radius: 15px;
 }
 .skills{
     display:flex;
