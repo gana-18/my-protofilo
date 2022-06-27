@@ -76,7 +76,7 @@
 
 
 
-  @media screen and (max-width:650px){
+  @media screen and (max-width:700px){
     .mywork{
         flex-direction: column;
         justify-content: center;
@@ -95,31 +95,7 @@
 
 
 
-  @media screen and (max-width:1030px){
-    .skills{
-      flex-direction: column;
-    }
-    .skills1,.skills2{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  }
-
-
-
-  @media screen and (max-width:700px){
-    .skills{
-      flex-direction: column;
-    }
-    .skills1,.skills2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-  }
-  }
+ 
 
 
 
