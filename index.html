@@ -8,6 +8,10 @@
     <meta name="google-site-verification" content="0h6zbkQC3z0GcHByuV2ESdHVk1vH9aNQn-4Of0wBqTY" />
     <link rel="icon" href="./images/icons8-gadgets-32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/intro.css">
     <link rel="stylesheet" href="styles/typing.css">
@@ -111,6 +115,33 @@
             </div>
         </div>
         <p class="mys">Projects</p>
+        <div class="mywork">
+            <button onclick="prev()" class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+            <div class="card">
+                <img class="img2" src="./images/calc.jpg" alt="tip-calc">
+              <div class="ptext">
+                <h2 class="text-el">Tip-calculator</h2>
+                <div class="underline"></div>
+              </div>
+              <div class="links">
+                <div>
+                    <a class="codep" href="https://github.com/gana-18/tip-calculator" target="_blank"><button class="plink">View
+                            code</button></a>
+                </div>
+                <div>
+                    <a class="live" href="https://gana-18.github.io/tip-calculator/" target="_blank"><button class="plink">View
+                            page</button></a>
+                </div>
+            </div>
+            </div>
+                  <button onclick="next()" class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+            
+            </div>
+        <!--
         <div class="mywork" id="My-Work">
             <div class="card">
                 <img class="img2" src="./images/calc.jpg" alt="tip-calc">
@@ -199,7 +230,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="exp" id="Experience">
             <p class="mys">Experience</p>
             <div data-aos="fade-up">
@@ -338,6 +369,7 @@
         </div>
     </div>
     <script src="index.js"></script>
+    <script src="projects.js"></script>
 </body>
 
 </html>

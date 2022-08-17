@@ -146,7 +146,7 @@
       margin-top:25px;
 }
 .card{
-    width:30%;
+    width:40%;
     height:auto;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
     transition : 0.3s ease-in-out;
@@ -164,7 +164,7 @@
     margin: 15px auto 15px auto;
     padding:17px;
     width:100%;
-    border-radius: 35px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 0px 4px  20px rgba(69, 65, 190, 0.7);
     border: none;
@@ -173,6 +173,18 @@
     visibility : hidden;
   opacity : 0;
   background-color: white;
+}
+.fas{
+    margin:10px;
+    padding:20px;
+}
+.fas:hover{
+    background: rgba(164, 165, 236, 0.176);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(220, 206, 206, 0.29);
 }
 .card:hover .plink{
     visibility : visible;
@@ -186,6 +198,27 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: hsl(205, 78%, 60%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .prev-btn,
+.next-btn {
+  color: #5f56ff;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
 }
 a{
     text-decoration: none;
