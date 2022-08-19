@@ -16,33 +16,75 @@
     font-family:'Jetbrains',monospace;
     scroll-behavior: smooth;
 }
+body{
+    background-color: hsl(210, 36%, 96%);
+}
 .main{
     display: flex;
     flex-direction:column;
 }
-.header{
-    display: flex;
-    flex-direction:row;
-    background-color: #6C63FF;
-    padding:10px;
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
-    position:fixed;
-    z-index:1000;
-    overflow: hidden;
-    width:100%;
-}
-.header>a{
+.section {
+    padding: 5rem 0;
+  }
+  
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+nav {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+.sections a {
+    color: hsl(209, 34%, 30%);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
     display: block;
-    color:white;
-    margin: 20px;
-    padding: 15px;
-    text-decoration: none;
-    background-color:#6C63FF;
-}
-.header>a:hover{
-    background-color:#5f56ff;
-    transform: scale(1.1);
-}
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  }
+  .sections a:hover {
+    background: hsl(205, 86%, 81%);
+    color: hsl(205, 78%, 60%);
+    padding-left: 1.5rem;
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: hsl(205, 78%, 60%);
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: hsl(205, 86%, 17%);
+    transform: rotate(90deg);
+  }
+  .logo {
+    height: 40px;
+  }
+  .sections {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 12rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .social-icons {
+    display: none;
+  }
 .img{
     display: flex;
     align-items: center;
@@ -174,18 +216,6 @@
   opacity : 0;
   background-color: white;
 }
-.fas{
-    margin:10px;
-    padding:20px;
-}
-.fas:hover{
-    background: rgba(164, 165, 236, 0.176);
-    border-radius: 5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(220, 206, 206, 0.29);
-}
 .card:hover .plink{
     visibility : visible;
     opacity : 1;
@@ -290,15 +320,15 @@ a{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding:30px;
+    padding:20px;
     width:50%;
 }
 .connect1{
     flex-direction: row;
-    padding:15px;
+    padding:10px;
     margin:5px;
 }
 .connect2{
     flex-direction: row;
-    padding: 15px;
+    padding: 10px;
 }

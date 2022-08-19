@@ -40,18 +40,50 @@
         </div>
     </div>
     <div class="main" id="showMe">
-        <div class="header" id="myheader">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#My-Work">Projects</a>
-            <a href="#Experience">Experience</a>
-            <a href="#Education">Education</a>
-            <a href="#coding">Coding Profiles</a>
-            <a href="#footer" id="left">Connect</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./images/logo.svg" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="sections">
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Experience">Experience</a>
+                    </li>
+                    <li>
+                      <a href="#My-Work">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#footer">Contact</a>
+                    </li>
+                  </ul>
+                  <ul class="social-icons">
+                    <li>
+                      <a href="https://www.facebook.com/velichetiganasaiteja.velicheti">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/Ganasaiteja1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/gana-sai-teja-velicheti/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
         <div class="img">
             <img src="./images/business-3d-man-lying-on-stomach-with-laptop.png" alt="man with laptop" width="60%">
         </div>
@@ -115,7 +147,7 @@
             </div>
         </div>
         <p class="mys">Projects</p>
-        <div class="mywork">
+        <div class="mywork" id="My-Work">
             <button onclick="prev()" class="prev-btn">
                 <i class="fas fa-chevron-left"></i>
               </button>
