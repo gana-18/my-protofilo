@@ -44,9 +44,11 @@ nav {
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.3s linear;
+    margin: 15px;
   }
   .sections a:hover {
-    background: hsl(205, 86%, 81%);
+    background: hsl(205, 97%, 74%);
+    transition: all 0.3s linear;
     color: hsl(205, 78%, 60%);
     padding-left: 1.5rem;
   }
@@ -89,7 +91,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:135px;
+    margin-top:40px;
 }
 .about{
     display: flex;
