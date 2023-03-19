@@ -27,6 +27,12 @@
     <link rel="stylesheet" href="styles/rate.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-106BYCD4HN"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeHtml").load("nav.html");
+      });
+   </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -34,7 +40,7 @@
 
         gtag('config', 'G-106BYCD4HN');
     </script>
-    <title>Gana's Protfilo</title>
+    <title>Gana | | Full-Stack Developer </title>
 </head>
 
 <body>
@@ -47,56 +53,15 @@
         </div>
     </div>
     <div class="main" id="showMe">
-        <nav>
-            <div class="nav-center">
-                <div class="nav-header">
-                    <img src="./images/logo.svg" class="logo" alt="logo" />
-                    <button class="nav-toggle">
-                      <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <ul class="sections">
-                    <li>
-                      <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#Experience">Experience</a>
-                    </li>
-                    <li>
-                      <a href="#My-Work">Projects</a>
-                    </li>
-                    <li>
-                      <a href="#footer">Contact</a>
-                    </li>
-                  </ul>
-                  <ul class="social-icons">
-                    <li>
-                      <a href="https://www.facebook.com/velichetiganasaiteja.velicheti">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/Ganasaiteja1">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/gana-sai-teja-velicheti/">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
-            </div>
-        </nav>
+
+        <div id="includeHtml"></div>    <!--NAVBAR element-->
+
         <div class="img">
             <img src="./images/business-3d-man-lying-on-stomach-with-laptop.png" alt="man with laptop" width="60%">
         </div>
         <div class="type">
             <div class="text-box">
-                <div class="fixed-text">I am a</div>
+                <div class="fixed-text">Gana is a</div>
                 <div class="animate-text">
                     <div>
                         <span>Designer</span>
@@ -137,12 +102,20 @@
                 <p>JavaScript</p>
             </div>
             <div class="sk">
+                <img src="./images/icons8-mongodb-96.png" alt="mongodb">
+                <p>MongoDb</p>
+            </div>
+            <div class="sk">
+                <img src="./images/icons8-express-js-96.png" alt="express js">
+                <p>Express Js</p>
+            </div>
+            <div class="sk">
                 <img src="./images/icons8-react-native-96.png" alt="react">
                 <p>React</p>
             </div>
             <div class="sk">
-                <img src="./images/icons8-mongodb-96.png" alt="mongodb">
-                <p>MongoDb</p>
+                <img src="./images/icons8-node-js-96.png" alt="node js">
+                <p>Node Js</p>
             </div>
             <div class="sk">
                 <img src="./images/icons8-github-96.png" alt="github">
@@ -153,123 +126,7 @@
                 <p>Figma</p>
             </div>
         </div>
-        <p class="mys">Projects</p>
-        <div class="mywork" id="My-Work">
-            <button onclick="prev()" class="prev-btn">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-            <div class="card">
-                <img class="img2" src="./images/calc.jpg" alt="tip-calc">
-              <div class="ptext">
-                <h2 class="text-el">Tip-calculator</h2>
-                <div class="underline"></div>
-              </div>
-              <div class="links">
-                <div>
-                    <a class="codep" href="https://github.com/gana-18/tip-calculator" target="_blank"><button class="plink">View
-                            code</button></a>
-                </div>
-                <div>
-                    <a class="live" href="https://gana-18.github.io/tip-calculator/" target="_blank"><button class="plink">View
-                            page</button></a>
-                </div>
-            </div>
-            </div>
-                  <button onclick="next()" class="next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-            
-            </div>
-        <!--
-        <div class="mywork" id="My-Work">
-            <div class="card">
-                <img class="img2" src="./images/calc.jpg" alt="tip-calc">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">Tip-calculator</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/tip-calculator" target="_blank"><button class="plink">View
-                                code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://gana-18.github.io/tip-calculator/" target="_blank"><button class="plink">View
-                                page</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="img2" src="./images/rest.jpg" alt="hotel">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">Restaurant</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/restaurant" target="_blank"><button class="plink">View
-                                code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://gana-18.github.io/restaurant/" target="_blank"><button class="plink">View
-                                page</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="img2" src="./images/chrome.jpg" alt="extension">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">Link saver</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/chrome-extension" target="_blank"><button class="plink">View
-                                code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/gana-18/chrome-extension" target="_blank"><button class="plink">View
-                                page</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="img2" src="./images/Screenshot 2022-06-26 191314.jpg" alt="blackjack">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">BlackJack Game</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/BlackJack-Game" target="_blank"><button class="plink">View
-                                code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://gana-18.github.io/BlackJack-Game/" target="_blank"><button class="plink">View
-                                page</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="img2" src="./images/Screenshot 2022-06-26 191602.jpg" alt="ping pong">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">Ping Pong</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/BlackJack-Game" target="_blank"><button class="plink">View
-                                code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://gana-18.github.io/BlackJack-Game/" target="_blank"><button class="plink">View
-                                page</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="mys">Blogs</p>
-        <div class="blogs">
-            <div class="card">
-                <img class="img2" src="./images/Screenshot 2022-06-26 191503.jpg" alt="">
-                <p class="ptext" style="text-decoration:underline; font-size:18px; font-weight: 600;">Blog</p>
-                <div class="links">
-                    <div>
-                        <a href="https://github.com/gana-18/Best-Websites-To-Learn-Front-End" target="_blank"><button
-                                class="plink">View code</button></a>
-                    </div>
-                    <div>
-                        <a href="https://gana-18.github.io/Best-Websites-To-Learn-Front-End/" target="_blank"><button
-                                class="plink">View page</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+        
         <div class="exp" id="Experience">
             <p class="mys">Experience</p>
             <div data-aos="fade-up">
