@@ -41,22 +41,6 @@
 
 
   @media screen and (max-width:700px){
-    .about{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .introd{
-        width:70%;
-        margin:20px;
-    }
-    .img1{
-        width:70%;
-        margin:10px;
-    }
-    .myedu{
-        width:90%;
-    }
     .coding{
       flex-direction: column;
       justify-content: center;
@@ -68,51 +52,24 @@
   }
 
 
-
-
-
-
-
-  @media screen and (max-width:700px){
-    .mywork{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
-        width:60%;
-        margin-top:25px;
-    }
+@media screen and (max-width:900px){
+  .edu{
+    flex-direction: column-reverse;
+    height: 800px;
   }
-
-
-
-
-
-
-
-
- 
-
-
-
-  @media screen and (max-width:430px){
-    .fixed-text{
-      font-size:20px;
-    }
-    .type{
-      min-height: 13vh;
-    }
+  .clg{
+    width: 100%;
   }
+}
+@media screen and (max-width:700px){
+  .myedu{
+    width:65%;
+  }
+}
 
-  @media screen and (max-width:550px){
-    .star1{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .connect1, .connect2{
-      display: flex;
-      flex-direction: column;
+
+  @media screen and (max-width:390px){
+    .animate-text {
+      font-size: 74px;
     }
   }

@@ -7,11 +7,11 @@
 .type{
 	font-size: 16px;
 	margin: 0;
-	background:hsl(210, 36%, 96%);
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;
 	min-height: 16vh;
+	margin-top:35px;
 }
 .text-box{
 	font-size: 80px;
@@ -36,7 +36,7 @@
 }
 .animate-text span{
 	position: relative;
-	color:#6C63FF;
+	color:#5CEBCA;
 	display: block;
 	text-align: left;
 
@@ -45,14 +45,14 @@
 	content: "";
 	position: absolute;
 	left: 0;
-	border-left: 5px solid #02095a;
+	border-left: 5px solid #60F6D3;
 	height: 100%;
 	animation:3s textType;
 	animation-iteration-count: infinite;
 	animation-timing-function: steps(10);
 	animation-fill-mode: backwards;
 	right: -2px;
-	background-color: hsl(210, 36%, 96%);
+	background-color: #010E1B;
 	overflow: hidden;
 }
 

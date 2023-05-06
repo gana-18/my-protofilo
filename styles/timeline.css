@@ -117,7 +117,7 @@
     margin: 4px 0 0 0;
     z-index: 14;
     line-height: 1em;
-    color: #fff;
+    color: #010E1B;
   }
   .direction-l .time-wrapper {
     float: none;
@@ -126,8 +126,8 @@
     float: none;
   }
   .time {
-    background:whitesmoke;
-    color: black;
+    background:#010E1B;
+    color: whitesmoke;
     display: inline-block;
     padding: 8px;
   }
